@@ -6,48 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>HTML and CSS Basics</title>
-    <style>
-        * {
-            margin: 0;
-        }
 
-        body {
-            font-family: Arial, Arial, Helvetica, sans-serif;
-            background-color: beige;
-
-        }
-
-        nav {
-            text-align: center;
-        }
-
-        header {
-            background-color: rgb(56, 56, 56);
-            color: #ffff;
-            padding: 20px;
-            margin-bottom: 50px;
-            text-align: center;
-            font-size: 1em
-        }
-
-        .container {
-            padding: 20px;
-
-        }
-
-        footer {
-            background-color: black;
-            padding: 50px;
-            font-size: 10px;
-            text-align: center;
-        }
-    </style>
 
     <link rel="stylesheet" href="table-style.css">
     <link rel="stylesheet" href="form-style.css">
 </head>
 
-<body class="container">
+<body>
     <header>
         <h1>
             HTML &amp; CSS Basics Tutotial
@@ -79,11 +44,11 @@
                 <option value="javascript">JavaScript</option>
                 <option value="python">Python</option>
             </select>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>
+            <table class="table">
+                <thead class="th">
+                    <tr class="td">
+                        <th class="td">ID</th>
+                        <th class="td">
                             First name
                         </th>
                         <th>
@@ -99,11 +64,11 @@
                         <td>Ernesto</td>
                         <td> Carocca</td>
                         <td>
-                            <button type="submit">
+                            <button class="edit-btn" type="submit">
                                 Edit
                             </button>
 
-                            <button type="submit">
+                            <button class="delete-btn" type="submit">
                                 Delete
                             </button>
                         </td>
